@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import './SearchBox.css';
 
-const SearchBox = () => {
-  return (
-    <div>SearchBox</div>
-  )
-}
+const SearchBox = ({ onSearchHandler }) => {
+  return <input type="search" placeholder="Search monsters" onChange={onSearchHandler}/>;
+};
 
 export default SearchBox;
